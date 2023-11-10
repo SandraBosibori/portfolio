@@ -14,5 +14,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+
+        .head{
+            margin-bottom: 20px;
+        }
+        .bod{
+            width: 80%;
+            height: 100vh;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+        }
     }
 }

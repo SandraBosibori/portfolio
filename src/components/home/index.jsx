@@ -13,6 +13,7 @@ import 'aos/dist/aos.css';
 import styles from "./home.module.css"
 import About from '../../pages/about'
 import Skills from '../../pages/skills'
+import me from '../../assets/me.png'
 
 const Home = () => {
     useEffect(() => {
@@ -29,7 +30,7 @@ const Home = () => {
                     </div>
 
                     <div className={styles.btns}>
-                        <button className={styles.btn1}><a href=''>My Resume</a></button>
+                        <button className={styles.btn1}>My Resume</button>
                         <button className={styles.btn2}>Contact me</button>
                     </div>
                     
@@ -43,7 +44,7 @@ const Home = () => {
                 </div>
 
                 <div className={styles.two} data-aos="fade-left">
-                    <div className={styles.photo}></div>
+                    <div className={styles.photo}><img className={styles.me} src= {me} alt='me' /></div>
                 </div>
       
               
