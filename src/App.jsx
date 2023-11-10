@@ -1,6 +1,8 @@
 import "./App.css"
 import Home from "./components/home"
 import Nav from "./components/nav"
+import About from "./pages/about"
+import Skills from "./pages/skills"
 
 function App() {
   
@@ -9,6 +11,8 @@ function App() {
     <>
       <Nav/>
       <Home/>
+      <About/>
+      <Skills/>
     </>
   )
 }
