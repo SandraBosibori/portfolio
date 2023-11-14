@@ -11,9 +11,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import styles from "./home.module.css"
-import About from '../../pages/about'
-import Skills from '../../pages/skills'
+import About from '../about'
+import Skills from '../skills'
 import me from '../../assets/me.png'
+import { Link } from 'react-router-dom'
+import Contact from '../../pages/contact'
 
 const Home = () => {
     useEffect(() => {
@@ -30,14 +32,14 @@ const Home = () => {
                     </div>
 
                     <div className={styles.btns}>
-                        <button className={styles.btn1}>My Resume</button>
-                        <button className={styles.btn2}>Contact me</button>
+                        <Link to='/resume'><button className={styles.btn1}>My Resume</button></Link> 
+                        <Link to='/contact'><button className={styles.btn2}>Contact me</button></Link>
                     </div>
                     
                     <div className={styles.circles}>
                         <div className={styles.socials}><a href='https://github.com/SandraBosibori'><FontAwesomeIcon icon={faGithub} size='xl'  /></a></div>
                         <div className={styles.socials}><a href='https://www.linkedin.com/in/sandra-bosibori-a07634286/'><FontAwesomeIcon icon={faLinkedin} size='xl' /></a></div>
-                        <div className={styles.socials}><FontAwesomeIcon icon={faEnvelope} size='xl'  /></div>
+                        <div className={styles.socials}><a href="mailto:sandrahbosibori@gmail.com"><FontAwesomeIcon icon={faEnvelope} size='xl'  /></a></div>
                        
 
                     </div>

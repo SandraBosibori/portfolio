@@ -36,6 +36,11 @@
             background-color: pink;
             margin: 10px;
             border-radius: 50px;
+
+            .ht{
+                width: 100px;
+                height: 100px;
+            }
             
         }
 

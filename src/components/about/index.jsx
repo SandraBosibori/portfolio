@@ -2,7 +2,7 @@ import styles from './about.module.css'
 
 const About=()=>{
     return(
-        <section className={styles.full} data-aos="fade-left">
+        <section id="about" className={styles.full} data-aos="fade-left">
             <div className={styles.cover}>
                 <div className={styles.head}>
                     <h1>About me...</h1>
